@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BerlinTour</string>
+    <string name="unknown_author">author unknown</string>
+    <string name="unknown_title"> </string>
+    <string name="unknown_message"> </string>
+    <string name="unknown_date">No Date :/</string>
+    <string name="date_lbl">Date</string>
+    <string name="rating_lbl">Rating</string>
+    <string name="ascending_lbl">Ascending</string>
+    <string name="descending_lbl">Descending</string>
+    <string name="direction_lbl">Direction</string>
+    <string name="order_by_lbl">Order by</string>
+    <string name="no_internet">Oops. Looks like there\'s no internet connection</string>
+</resources>

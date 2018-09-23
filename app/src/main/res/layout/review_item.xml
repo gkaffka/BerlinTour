@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.kaffka.berlintour.ui.viewmodels.ReviewItemViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CardDateStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewmodel.date}"
+                tools:text="September 21, 2018" />
+
+            <TextView
+                style="@style/CardAuthorStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewmodel.author}"
+                tools:text="Ramona – Germany" />
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:rating="@{viewmodel.rating}"
+                android:theme="@style/CardRatingStyle" />
+
+            <TextView
+                style="@style/CardTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewmodel.title}"
+                android:visibility="@{viewmodel.titleVisibility}"
+                tools:text="Amazing and interesting!" />
+
+            <TextView
+                style="@style/CardMessageStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@{viewmodel.message}"
+                android:visibility="@{viewmodel.messageVisibility}"
+                tools:text="Ich war das 3. Mal bei einer Führung in Tempelhof / Flughafen dabei und fand es wieder großartig! Super einfache und schnelle Buchung; sehr netter Service und professionelle Guides wie Andreas Becker machen den Tempelhofer Flughafen immer wieder zu einem unvergesslichen Erlebnis!" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>
